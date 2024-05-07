@@ -19,7 +19,7 @@ const Movie = () => {
       .catch((error) => {
         console.log(this.error);
       });
-  });
+  },[]);
   const getMovieById = (event) => {
     axios
       .get(
